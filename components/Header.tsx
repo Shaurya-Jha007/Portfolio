@@ -1,4 +1,5 @@
 import { SocialIcon } from "react-social-icons";
+import { motion } from "motion/react";
 export default function Header() {
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
