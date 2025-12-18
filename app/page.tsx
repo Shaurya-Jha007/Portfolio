@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 export default function Home() {
   return (
-    <main className="h-screen">
+    <main>
       <Header />
-      <section id="hero">
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
     </main>
