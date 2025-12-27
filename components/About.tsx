@@ -16,28 +16,24 @@ export default function About() {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      <MotionImage
-        src={profile}
-        height={224}
-        width={224}
-        loading="lazy"
-        alt="Shaurya's profile picture."
-        initial={{
-          x: -200,
-          opacity: 0,
-        }}
-        whileInView={{
-          x: 0,
-          opacity: 1,
-        }}
-        viewport={{
-          once: true,
-        }}
-        transition={{
-          duration: 1.2,
-        }}
-        className="mb-20 sm:mt-20 md:mb-0 rounded-full object-cover md:rounded-lg md:w-64 md:h-80"
-      />
+      <motion.div
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2 }}
+        className="relative mb-20 sm:mt-20 md:mb-0 shrink-0
+                   w-60 h-60
+                   md:w-72 md:h-96
+                   xl:w-80 xl:h-100"
+      >
+        <MotionImage
+          src={profile}
+          fill
+          loading="eager"
+          alt="Shaurya's profile picture."
+          className="rounded-full object-cover md:rounded-lg"
+        />
+      </motion.div>
       <div className="space-y-10 px-0 md:p-10">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
@@ -45,17 +41,16 @@ export default function About() {
           background
         </h4>
         <p className="text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit
-          voluptatibus at cumque porro omnis quas, quia, eius, quis et cum
-          itaque voluptates laudantium quibusdam maiores magni tempore nihil
-          numquam reiciendis. Qui nostrum, voluptate ipsum voluptates vitae
-          culpa possimus, eos repellendus impedit perferendis esse molestiae ex
-          earum ipsa ea labore minus delectus cumque quia doloremque eveniet!
-          Voluptatum, reiciendis aspernatur. Inventore tempora a exercitationem,
-          quisquam ut consectetur dolore labore modi vero, iusto eum voluptatem
-          doloremque harum. Saepe eligendi neque quam optio eveniet esse aliquid
-          libero eius in sed animi sunt autem amet distinctio, rem delectus
-          ipsa? Corrupti quas ipsum tempore maxime.
+          Hi there I&apos;m Shaurya. I started coding in 11<sup>th</sup>{" "}
+          standard and went on to learn languages and frameworks such as{" "}
+          <strong>JavaScript, React.js, Next.js</strong>, etc. I finished my
+          Master&apos;s in Computer Applications in 2025. I have completed
+          multiple certification courses and Internships in the field of web
+          development. My craving for challenges and continuous learning and
+          improving cycle has brought me where I stand today. There&apos;s still
+          plenty of room for improvement and I want you to be my partner in this
+          journey of learning and improving. I am currently seeking entry-level
+          opportunities to learn, contribute, and grow.
         </p>
       </div>
     </motion.div>
