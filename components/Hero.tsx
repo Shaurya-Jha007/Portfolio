@@ -2,12 +2,12 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
-import profile from "@/public/profile.jpg";
+import profile from "@/public/hero.png";
 import Link from "next/link";
 export default function Hero() {
   const [text, count] = useTypewriter({
     words: [
-      "Welcome to my portfolio!",
+      "Here's my portfolio!",
       "Guy-who-loves-anime.tsx",
       "<ButLovesToCodeMore />",
     ],
@@ -20,9 +20,9 @@ export default function Hero() {
       <Image
         src={profile}
         alt="Shaurya's profile picture"
-        height={90}
-        width={90}
-        className="relative rounded-lg mx-auto object-cover"
+        height={100}
+        width={100}
+        className="relative rounded-full mx-auto object-cover"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
