@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       "w7.pngwing.com",
       "raw.githubusercontent.com",
       "upload.wikimedia.org",
+      "cdn.sanity.io",
     ],
   },
   /* config options here */
