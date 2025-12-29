@@ -16,18 +16,18 @@ export default function Skills() {
         Hover over a skill for current proficiency.
       </h3>
       <div className="grid grid-cols-4 gap-5">
-        <Skill skill="HTML" />
-        <Skill skill="CSS" />
-        <Skill skill="JS" />
-        <Skill skill="React" />
-        <Skill skill="Redux" />
-        <Skill skill="Next" />
-        <Skill skill="Node" />
-        <Skill skill="Express" />
-        <Skill skill="TCSS" />
-        <Skill skill="TS" />
-        <Skill skill="Postgres" />
-        <Skill skill="MUI" />
+        <Skill proficiency={92} skill="HTML" directionLeft={true} />
+        <Skill proficiency={85} skill="CSS" directionLeft={true} />
+        <Skill proficiency={90} skill="JS" directionLeft={true} />
+        <Skill proficiency={96} skill="React" directionLeft={true} />
+        <Skill proficiency={88} skill="Redux" directionLeft={true} />
+        <Skill proficiency={93} skill="Next" directionLeft={true} />
+        <Skill proficiency={77} skill="Node" directionLeft={false} />
+        <Skill proficiency={68} skill="Express" directionLeft={false} />
+        <Skill proficiency={75} skill="TCSS" directionLeft={false} />
+        <Skill proficiency={80} skill="TS" directionLeft={false} />
+        <Skill proficiency={83} skill="Postgres" directionLeft={false} />
+        <Skill proficiency={81} skill="MUI" directionLeft={false} />
       </div>
     </motion.div>
   );

@@ -20,6 +20,7 @@ type tech =
 interface SkillProp {
   directionLeft?: boolean;
   skill: tech;
+  proficiency: number;
 }
 
 const skillsLink = {
@@ -41,7 +42,11 @@ const skillsLink = {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png",
 };
 
-export default function Skill({ directionLeft, skill }: SkillProp) {
+export default function Skill({
+  directionLeft,
+  skill,
+  proficiency,
+}: SkillProp) {
   return (
     <div className="group relative flex cursor-pointer">
       <MotionImage
@@ -62,7 +67,9 @@ export default function Skill({ directionLeft, skill }: SkillProp) {
       />
       <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100">92%</p>
+          <p className="text-3xl font-bold text-black opacity-100">
+            {proficiency}%
+          </p>
         </div>
       </div>
     </div>
