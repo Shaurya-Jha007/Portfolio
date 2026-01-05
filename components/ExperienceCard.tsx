@@ -1,8 +1,6 @@
 import lifehetuImg from "@/public/lifehetu.png";
 import Image from "next/image";
-import { motion } from "motion/react";
-
-const MotionImage = motion.create(Image);
+import { MotionImage } from "@/util/MotionImage";
 
 export default function ExperienceCard() {
   return (
@@ -75,7 +73,7 @@ export default function ExperienceCard() {
         </div>
         <div>
           <p className="uppercase py-4 text-gray-300 text-sm">
-            18 Aug, 2025 - 18 Dec, 2025
+            18 Aug, 2025 - 17 Dec, 2025
           </p>
 
           <ul className="list-disc space-y-3 ml-5 text-base text-left">

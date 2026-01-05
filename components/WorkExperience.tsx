@@ -1,10 +1,9 @@
-"use client";
-import { motion } from "motion/react";
 import ExperienceCard from "./ExperienceCard";
+import { MotionDiv } from "@/util/MotionImage";
 
 export default function WorkExperience() {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -19,6 +18,6 @@ export default function WorkExperience() {
       <div className="mt-28 flex items-center justify-center w-full">
         <ExperienceCard />
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 }

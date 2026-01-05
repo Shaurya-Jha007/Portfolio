@@ -1,19 +1,10 @@
-"use client";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { Cursor } from "react-simple-typewriter";
+import Typewriter from "./Typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import profile from "@/public/hero.png";
 import Link from "next/link";
 export default function Hero() {
-  const [text, count] = useTypewriter({
-    words: [
-      "Here's my portfolio!",
-      "Guy-who-loves-anime.tsx",
-      "<ButLovesToCodeMore />",
-    ],
-    loop: true,
-    delaySpeed: 2000,
-  });
   return (
     <section className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -29,7 +20,7 @@ export default function Hero() {
           Software Engineer
         </h2>
         <h1 className="text-5xl xl:text-4xl font-semibold px-10">
-          <span className="mr-3">{text}</span>
+          <Typewriter />
           <Cursor cursorColor="#f7ab0a" />
         </h1>
         <div className="pt-5">

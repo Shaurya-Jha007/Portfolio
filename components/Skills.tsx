@@ -1,9 +1,8 @@
-"use client";
 import Skill from "./Skill";
-import { motion } from "motion/react";
+import { MotionDiv } from "@/util/MotionImage";
 export default function Skills() {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -29,6 +28,6 @@ export default function Skills() {
         <Skill proficiency={83} skill="Postgres" directionLeft={false} />
         <Skill proficiency={81} skill="MUI" directionLeft={false} />
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 }
